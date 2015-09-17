@@ -61,6 +61,7 @@ Write the following methods. Start with the tests, then use them to create your 
 
     Given two strings, word and token, return a version of word where all characters have been replaced by pluses ('+'), except for appearances of the token which are preserved unchanged.
 8. zero_front
+
 	Given an array of integers, return an array that contains the exact same numbers but rearranged so that all the zeros are grouped at the start of the array. The relative order of the other numbers should not be changed. Example: [5, 0, 3, 1, 0, 6] => [0, 0, 5, 3, 1, 6]. You may modify and return the given array or make a new array.
 9. ten_run
 
@@ -68,7 +69,7 @@ Write the following methods. Start with the tests, then use them to create your 
 10. max_span
 
     Consider the leftmost and rightmost appearances of some value in an array. We define the span of this value is the number of elements between the two inclusive. A single value has a span of 1. Return the largest span found in the given array. Efficiency is not a priority. Examples (not exhaustive):
-    
+
     * [1, 2, 1, 1, 3] => 4
     * [1, 4, 2, 1, 4, 1, 4] => 6
     * [1, 4, 2, 1, 4, 4, 4] => 6
