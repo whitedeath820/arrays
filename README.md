@@ -1,4 +1,4 @@
-# Methods2
+# Arrays
 
 ## Setup
 
@@ -25,45 +25,49 @@ Install win32console
 Run the entire test suite
 
 ```
-    $ ruby methods2_test.rb
+    $ ruby arrays_test.rb
 ```
 
 Run only a specific test
 
 ```
-    $ ruby methods2_test.rb --name type_test_method_name_here
+    $ ruby arrays_test.rb --name type_test_method_name_here
 ```
 
 ## Goal
 
 Write the following methods. Start with the tests, then use them to create your method.
 
-1. elevenish?
+1. middles
 
-    A number is elevenish if it is a multiple of eleven or one greater than a multiple of eleven.
-2. ice_cream_party
+    Given two arrays, each length 3, return a new array containing just their middle elements.
+2. max
 
-    You are having a party with amounts of ice cream and candy. Return the int outcome of the party encoded as 0=bad, 1=good, or 2=great. A party is good (1) if both ice cream and candy are at least 5. However, if either ice cream or candy is at least double the amount of the other one, the party is great (2). However, in all cases, if either ice cream or candy is less than 5, the party is always bad (0).
-3. successful_squirrel_party?
+    Use a loop to find the maximum element in a given numerical array.
+3. lucky13?
 
-    When squirrels get together for a party, they like to have nuts. A squirrel party is successful when the number of nuts is between 40 and 60, inclusive. Unless it is the weekend, in which case there is no upper bound on the number of nuts. Return true if the party with the given values is successful, or false otherwise. 
-4. ticket
+    An array is lucky13 iff (if and only if) it contains no 1's and no 3's.
+4. repeat_separator
 
-    You have a lottery ticket, with ints a, b, and c on it. This makes three pairs, which we'll call ab, bc, and ac. Consider the sum of the numbers in each pair. If any pair sums to exactly 10, the result is 10. Otherwise if the ab sum is exactly 10 more than either bc or ac sums, the result is 5. Otherwise the result is 0.
-5. in_order?
+    Given two strings, **word** and a **separator**, and a **count**, make a string that has **count** repetitions of **word**, each separated by **separator**. Example: repeat_separator('This', 'And', 2) => 'ThisAndThis'.
+5. same_ends?
 
-    Given three ints, a b c, return true if b is greater than a, and c is greater than b. However, with the exception that if "bOk" is true, b does not need to be greater than a. 
-6. less_by_ten?
+    Given an array and a length n to check, return true if the n numbers at the start and end of the array are the same. For example, with the array
+    [5, 6, 45, 99, 23, 5 6], the ends are the same for n = 0 and n = 2, and false for n = 1 and n = 3. You may assume n is in the range 0..nums.length .
+6. starry?
 
-    Given three ints, a b c, return true if one of them is 10 or more less than one of the others.
-7. fizz_string
+    A string is starry iff every individual '*' character not at the ends of the string is surrounded by the same character on both sides.
+7. plus_it
 
-    Given a string str, if the string starts with "f" return "Fizz". If the string ends with "b" return "Buzz". If both the "f" and "b" conditions are true, return "FizzBuzz". In all other cases, return the string unchanged.
-8. first_last_six?
-	Given an array of integers, return true if 6 appears as either the first or last element in the array. The array will be length 1 or more.
-9. rotate_left
+    Given two strings, word and token, return a version of word where all characters have been replaced by pluses ('+'), except for appearances of the token which are preserved unchanged.
+8. zero_front
+	Given an array of integers, return an array that contains the exact same numbers but rearranged so that all the zeros are grouped at the start of the array. The relative order of the other numbers should not be changed. Example: [5, 0, 3, 1, 0, 6] => [0, 0, 5, 3, 1, 6]. You may modify and return the given array or make a new array.
+9. ten_run
 
-    Given an array of 3 integers, return an array with the elements "rotated left" so 1, 2, 3 yields 2, 3, 1.
-10. double23?
+    For each multiple of 10 in the given array, change all the values following it to be that multiple of 10, until encountering another multiple of 10. Example: [2, 10, 3, 4, 20, 5] => [2, 10, 10, 10, 20, 20]
+10. max_span
 
-    Given an integer array, return true if the array contains 2 twice, or 3 twice. The array will have 0, 1, or 2 elements.
+    Consider the leftmost and rightmost appearances of some value in an array. We define the span of this value is the number of elements between the two inclusive. A single value has a span of 1. Return the largest span found in the given array. Efficiency is not a priority. Examples (not exhaustive):
+    [1, 2, 1, 1, 3] => 4
+    [1, 4, 2, 1, 4, 1, 4] => 6
+    [1, 4, 2, 1, 4, 4, 4] => 6
