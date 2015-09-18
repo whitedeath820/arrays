@@ -68,7 +68,7 @@ Write the following methods. Start with the tests, then use them to create your 
     For each multiple of 10 in the given array, change all the values following it to be that multiple of 10, until encountering another multiple of 10. Example: [2, 10, 3, 4, 20, 5] => [2, 10, 10, 10, 20, 20]
 10. max_span
 
-    Consider the leftmost and rightmost appearances of some value in an array. We define the span of this value is the number of elements between the two inclusive. A single value has a span of 1. Return the largest span found in the given array. Efficiency is not a priority. Examples (not exhaustive):
+    Consider the leftmost and rightmost appearances of some value in an array. We define the span of this value as the number of elements between the left and right spots, inclusive. A single value has a span of 1. Return the largest span found in the given array. Efficiency is not a priority. Examples (not exhaustive):
 
     * [1, 2, 1, 1, 3] => 4
     * [1, 4, 2, 1, 4, 1, 4] => 6
