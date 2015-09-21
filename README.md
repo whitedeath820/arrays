@@ -41,6 +41,7 @@ Write the following methods. Start with the tests, then use them to create your 
 1. middles
 
     Given two arrays, each length 3, return a new array containing just their middle elements.
+    
 2. max
 
     Use a loop to find the maximum element in a given numerical array.
